@@ -121,9 +121,7 @@ class _CustomWidgetExampleState extends State<CustomWidgetExample> {
       stateManagement: true,
       hideNavigationBarWhenKeyboardShows: true,
       hideNavigationBar: _hideNavBar,
-      decoration: NavBarDecoration(
-          colorBehindNavBar: Colors.indigo,
-          borderRadius: BorderRadius.circular(20.0)),
+      decoration: NavBarDecoration(colorBehindNavBar: Colors.indigo, borderRadius: BorderRadius.circular(20.0)),
       popAllScreensOnTapOfSelectedTab: true,
       itemAnimationProperties: ItemAnimationProperties(
         duration: Duration(milliseconds: 400),
@@ -143,8 +141,6 @@ class _CustomWidgetExampleState extends State<CustomWidgetExample> {
         },
         selectedIndex: _controller.index,
       ),
-      navBarStyle:
-          NavBarStyle.custom, // Choose the nav bar style with this property
     );
   }
 }
